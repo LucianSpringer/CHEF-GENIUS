@@ -1,0 +1,7 @@
+{
+  "name": "ChefGenius",
+  "description": "An AI-powered kitchen assistant that analyzes your fridge, suggests recipes with live pricing, generates dish previews, and guides you with voice instructions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
