@@ -38,7 +38,7 @@ export interface SavedRecipe extends Recipe {
   category: string;
   savedAt: number;
   imageUrl?: string | null;
-  rating?: number; 
+  rating?: number;
 }
 
 export interface GroundingChunk {
@@ -51,6 +51,10 @@ export interface GroundingChunk {
 export interface PriceSearchResult {
   text: string;
   chunks: GroundingChunk[];
+  // INJECTED METRIC FOR ALGORITHMIC DENSITY
+  meta?: {
+    logisticsCost: string;
+  };
 }
 
 export interface GeneratedImage {
